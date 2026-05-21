@@ -1,18 +1,27 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.16" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.16" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.16">
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      <PrivateAssets>all</PrivateAssets>
-    </PackageReference>
-  </ItemGroup>
+	<!-- <PropertyGroup>
+		<StaticWebAssetBasePath>_content/$(PackageId)</StaticWebAssetBasePath>
+		<DisableScopedCssBundling>true</DisableScopedCssBundling>
+	</PropertyGroup> -->
+	
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.16" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.16" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.16">
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<!-- <None Update="{Pages}/*.cshtml.css" CssScope="custom-scope-identifier" /> -->
+	</ItemGroup>
 
 </Project>
