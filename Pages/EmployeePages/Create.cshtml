@@ -1,15 +1,16 @@
 @page
-@model EmployeeManagementDashboard.Pages.EmployeePages.CreateModel
+@model CreateModel
 
 @{
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1>@Model.Title</h1>
 
-<h4>Employee</h4>
+<h4>@Model.SubTitle</h4>
 <hr />
 <div class="row">
+    <p>@Model.StatusMessage</p>
     <div class="col-md-4">
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
